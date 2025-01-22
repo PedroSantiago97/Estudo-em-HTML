@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Fieldsets</title>
+    <style>
+        .row{
+            margin: 5px;
+        }
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        button{
+            margin-left: 350px;
+        }
+
+        fieldset{
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form name="cadastro" method="get" autocomplete="on" action="" target="_blank" onsubmit="alert('Enviei o formulário')">
+            <div class="row"><label for="">Nome:</label> <input type="text" name="nome"/><br></div>
+            <div class="row"><label for="">Idade:</label> <input type="number" name="idade"/><br></div>
+            <div class="row"><label for="">Senha:</label> <input type="password" name="senha"/><br></div>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <form>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="">Rua: </label><input type="text" /><br>
+            <label for="">Bairro: </label><input type="text" /><br>
+            <label for="">Número: </label><input type="number" max="99" step="3" min="0"/><br>
+            <label for="">Botão: </label><input type="button" value="Enviar"/><br>
+        </fieldset>
+        <fieldset>
+            <Legend>Cor e Altura</Legend>
+            <label for="">Range: </label><input type="range" /><br>
+            <label for="">Cor: </label><input type="color" /><br>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço de envio</legend>
+            <label for="">email: </label><input type="email" /><br>
+            <label for="">Url: </label><input type="url" /><br>
+        </fieldset>
+        <fieldset>
+            <legend>Data de envio</legend>
+            <label for="">Data: </label><input type="date" /><br>
+            <label for="">Semana: </label><input type="week" /><br>
+            <label for="">Mês: </label><input type="month" /><br>
+        </fieldset>
+        <fieldset>
+            <legend>Arquivo</legend>
+            <label>Arq existente? </label><input type="checkbox" /><br>
+            <label>PDF: </label><input type="radio" value="pdf" name="tipoarq"/> <label>PNG: </label><input type="radio" value="png" name="tipoarq"/> <label>WORD: </label><input type="radio" value="word" name="tipoarq"/> <label>IMG: </label><input type="radio" value="img" name="tipoarq"/> 
+            <label>Arquivo: </label><input type="file" multiple /><br>
+            <label>Escondido: </label><input type="hidden" /><br>
+            <label>Procura: </label><input type="search" /><br>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <hr>
+
+
+</body>
+</html>
