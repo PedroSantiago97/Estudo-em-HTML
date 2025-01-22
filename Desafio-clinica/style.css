@@ -1,149 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;/*Margem 0*/
+    padding: 0;/*Espaço entre o conteudo e a borda 0*/
+    box-sizing: border-box; /*Organiza as dimensões*/
+    font-family: 'Poppins', sans-serif; /*Fontes*/
 }
 
 html {
-    background-color: #ffffff;
-    overflow-y: scroll;
+    background-color: #ffffff;/*cor de fundo da tag*/
+    overflow-y: scroll;/*Barra de rolagem*/
     
 }
 
 body {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: auto 1fr auto auto;
-    min-height: 100vh;
-    background-color: white;
-    max-width: 1400px;
-    margin: 20px auto;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    display: grid;/*Organização em grade*/
+    grid-template-columns: 250px 1fr;/*Dimensões de coluna da grade*/
+    grid-template-rows: auto 1fr auto auto;/*Dimensões de Linhas da grade*/
+    min-height: 100vh; /*Altura mínima para 100% da altura visivel*/
+    background-color: white; /*Fundo branco*/
+    max-width: 1400px; /*Largura máxima*/
+    margin: 20px auto; /*Margem superior e inferior: 20px, esquerda e direita: auto*/
+    border-radius: 20px; /*Angulação dos cantos da borda*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /*sombra do conteiner*/
+    overflow: hidden;/*Controla o que passa do tamanho do conteiner, nesse caso hidden esconde*/
 }
 
 menu {
-    background: linear-gradient(135deg, #00bcd4, #006c84);
-    padding: 2rem;
-    border-radius: 20px 0 0 0;
-    grid-row: 1 / 5;
-    color: white;
+    background: linear-gradient(135deg, #00bcd4, #006c84); /*Cor de fundo gradient: efeito de mudança de cor*/
+    padding: 2rem; /*Afastamento do conteudo com a borda*/
+    border-radius: 20px 0 0 0; /*Angulação dos cantos da borda*/
+    grid-row: 1 / 5; /*Conteiner inicia na linha 1 e termina na linha 5*/
+    color: white; /*Cor da fonte*/
 }
 
 menu img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 5px solid white;
-    margin-bottom: 1rem;
-    object-fit: cover;
+    width: 80px; /*Largura da imagem*/
+    height: 80px; /*Altura da imagem*/
+    border-radius: 50%; /*Angulação dos cantos da borda*/
+    border: 5px solid white; /*Borda na imagem*/
+    margin-bottom: 1rem; /*Margem de distancia para baixo*/
+    object-fit: cover;/*Ajusta a imagem no conteiner*/
 }
 
 .logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+    display: flex; /*organização flexibilizada*/
+    flex-direction: column; /*Direciona o conteudo em coluna*/
+    align-items: center;/*Alinha os itens no centro*/
+    margin-bottom: 2rem; /*Afasta a imagem 2x o tamnho da fonte raiz*/
 }
 
 
 menu h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
+    font-size: 1.5rem; /*Tamanho da fonte de H2 para x1.5 o tamanho da fonte raiz*/
+    margin-bottom: 2rem; /*Margem para baixo em x2 o temanho da fonte raiz*/
+    text-align: center; /*Texto alinhado no centro*/
 }
 
 menu ul {
-    list-style: none;
+    list-style: none;/*Lista sem estilo*/
 }
 
 menu ul li {
-    margin: 1rem 0;
+    margin: 1rem 0;/*Margem entre os conteudos da lista em x1 o tamanho da fonte raiz*/
 }
 
 menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    display: block;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
+    color: white; /*Cor da fonte*/
+    text-decoration: none; /*Sem decoração de texto*/
+    font-size: 1.1rem; /*Tamanho da fonte x1.1 o tamanho da fonte raiz*/
+    display: block; /*display*/
+    padding: 0.5rem 1rem; /*Define o espaçamento dos botoes da navegação em 0.5x o tamanho da fonte raiz na parte superior e inferior e 1x o tamanho da fonte raiz nas laterais*/
+    border-radius: 8px; /*Angulação dos cantos da borda*/
 }
 
 menu ul li a:hover, menu ul li a.active {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateX(10px);
+    /*Hover: insere uma animação no conteiner, nesse caso, nos links: <a></a> na lista do menu de navegação*/
+    background: rgba(255, 255, 255, 0.2);/*Ao passar o mouse em cima fica a cor especificada:rgba(255, 255, 255, 0.2) */
+    transform: translateX(10px); /*atributo transform:; adiciona a animação que é o TranslateX: que translada o conteudo na horizontal*/
+    transition: all 0.3s ease; /*Suaviza o movimento quando o Hover é ativado*/
 }
 
 .headerprincipal {
-    background-image: url('https://st2.depositphotos.com/1080148/7921/i/450/depositphotos_79210632-stock-photo-happy-family-in-wheat-field.jpg');
-    background-size: cover;
-    background-position: left;
-    position: relative;
-    padding: 2rem;
-    border-radius: 0 20px 0 0;
-    color: white;
+    background-image: url('https://st2.depositphotos.com/1080148/7921/i/450/depositphotos_79210632-stock-photo-happy-family-in-wheat-field.jpg');/*Coloca uma imagem como plano de fundo*/
+    background-size: cover;/*Define o tamanho do plano de fundo, nesse caso cover: vai seguir o tamanho do conteiner*/
+    background-position: left; /*Posiciona a imagem de fundo mais para esquerda, é bom se a imagem for maior que o conteiner*/
+    position: relative; /*Faz pequenas correções para nao alterar o fluxo do layout*/
+    padding: 2rem; /*da um espaço de 2x o tamanho da fonte raiz entre a borda e o conteudo do conteiner*/
+    border-radius: 0 20px 0 0; /*Angulação dos cantos da borda*/
+    color: white; /*Cor da fonte*/
 }
 
 .headersobre{
-    background-image: url('https://img.freepik.com/fotos-gratis/familia-feliz-se-divertindo-no-campo-na-sunset_1303-22465.jpg');
-    background-size: cover;
-    background-position: 65% 65%;
-    position: relative;
-    padding: 2rem;
-    border-radius: 0 20px 0 0;
-    color: white;
+    background-image: url('https://img.freepik.com/fotos-gratis/familia-feliz-se-divertindo-no-campo-na-sunset_1303-22465.jpg');/*Coloca uma imagem como plano de fundo*/
+    background-size: cover;/*Define o tamanho do plano de fundo, nesse caso cover: vai seguir o tamanho do conteiner*/
+    background-position: 65% 65%;/*Posiciona a imagem de fundo de forma customizada usando %*/
+    position: relative; /*Faz pequenas correções para nao alterar o fluxo do layout*/
+    padding: 2rem; /*da um espaço de 2x o tamanho da fonte raiz entre a borda e o conteudo do conteiner*/
+    border-radius: 0 20px 0 0; /*Angulação dos cantos da borda*/
+    color: white;/*Cor da fonte*/
 }
 
 .headerhorario{
-    background-image: url('https://st2.depositphotos.com/4459753/47287/i/450/depositphotos_472877584-stock-photo-running-kids-green-field-summer.jpg');
-    background-size: cover;
-    background-position: 85% 85%;
-    position: relative;
-    padding: 2rem;
-    border-radius: 0 20px 0 0;
-    color: white;
+    background-image: url('https://st2.depositphotos.com/4459753/47287/i/450/depositphotos_472877584-stock-photo-running-kids-green-field-summer.jpg');/*Coloca uma imagem como plano de fundo*/
+    background-size: cover;/*Define o tamanho do plano de fundo, nesse caso cover: vai seguir o tamanho do conteiner*/
+    background-position: 85% 85%; /*Posiciona a imagem de fundo de forma customizada usando %*/
+    position: relative; /*Faz pequenas correções para nao alterar o fluxo do layout*/
+    padding: 2rem; /*da um espaço de 2x o tamanho da fonte raiz entre a borda e o conteudo do conteiner*/
+    border-radius: 0 20px 0 0; /*Angulação dos cantos da borda*/
+    color: white; /*Cor da fonte*/
 }
 
 .headercontato{
-    background-image: url('https://st.depositphotos.com/16337376/54713/i/1600/depositphotos_547133884-stock-photo-group-of-kids-busy-using.jpg');
-    background-size: cover;
-    background-position: 35% 35%;
-    position: relative;
-    padding: 2rem;
-    border-radius: 0 20px 0 0;
-    color: white;
+    background-image: url('https://st.depositphotos.com/16337376/54713/i/1600/depositphotos_547133884-stock-photo-group-of-kids-busy-using.jpg'); /*Coloca uma imagem como plano de fundo*/
+    background-size: cover; /*Define o tamanho do plano de fundo, nesse caso cover: vai seguir o tamanho do conteiner*/
+    background-position: 35% 35%; /*Posiciona a imagem de fundo de forma customizada usando %*/
+    position: relative;  /*Faz pequenas correções para nao alterar o fluxo do layout*/
+    padding: 2rem; /*da um espaço de 2x o tamanho da fonte raiz entre a borda e o conteudo do conteiner*/
+    border-radius: 0 20px 0 0; /*Angulação dos cantos da borda*/
+    color: white; /*Cor da fonte*/
 }
 .header-content {
-    text-align: center;
+    text-align: center; /*Alinha o texto no centro do conteiner*/
 }
 
 .textoheader1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-size: 1.5rem; /*Muda o tamanho da fonte desse conteiner em 1,5x o tamanho da fonte raiz*/
+    font-weight: 600; /*Define o quão grossa a fonte vai ser o normal é 400 e o negrito é 700*/
+    margin-bottom: 1rem; /*Coloca uma distande 1x o tamanho da fonte raiz para baixo do conteiner*/
     
 }
 
 .containertexto {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1rem;
-    border-radius: 10px;
-    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1); /*Cor de fundo do conteiner*/
+    padding: 1rem; /*Distancia entre o conteudo do conteiner e as bordas  do mesmo em 1x o tamanho da fonte raiz*/
+    border-radius: 10px; /*Angulação das pontas da borda*/
+    overflow: hidden; /*Controla o que passa do tamanho do conteiner, nesse caso hidden esconde*/
 }
 
 .tabelahorarios{
-    display: flex;
-    justify-content: center;
+    display: flex; /*Organização flexibilizada*/
+    justify-content: center; /*Conteudo centralizado*/
 }
 table {
-    border-collapse: collapse;
-    width: 100%;
+    border-collapse: collapse; /*Une as linhas da tabela*/
+    width: 100%; /*Deixa a largura da tabela*/
 
 }
 
