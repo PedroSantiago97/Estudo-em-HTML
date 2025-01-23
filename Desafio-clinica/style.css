@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); /*Importa uma fonte pela url*/
 
 * {
     margin: 0;/*Margem 0*/
@@ -161,186 +161,174 @@ table {
         transform: translateX(100%); /*Começa na direita (Fim) do container*/
     }
     to {
-        transform: translateX(-80%); /**/
+        transform: translateX(-100%); /*Termina na esquerda (Inicio) do container*/
     }
 }
 
 main {
-    background-color: white;
-    padding: 2rem;
-    width: 100%;
-    height: auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    background-color: white; /*Cor de fundo*/
+    padding: 2rem; /*Distancia entre o conteudo e a div em 2x o tamanho da fonte raiz*/
+    width: 100%;/*100% da largura da tela*/
+    height: auto; /*Altura automatica*/
+    overflow-y: scroll;/*scroll vertical aparecendo*/
+    overflow-x: hidden; /*esconde os outros atributos*/
 }
 
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+    display: grid; /*Organização em grade*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/*Organização de colunas*/
+    gap: 2rem; /*Distancia entre os conteudos da div*/
+    padding: 1rem; /*Distancia entre o conteudo e a div em 1x o tamanho da fonte raiz*/
 }
 
 .card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 15px;
+    background: white; /*Cor de fundo*/
+    padding: 1.5rem; /*Distancia entre o conteudo e a div em 1x o tamanho da fonte raiz*/
+    border-radius: 15px; /*Angulação das pontas da borda*/
 }
 
 
 .card h3 {
-    color: #006c84;
-    margin-bottom: 1rem;
+    color: #006c84; /*Cor da fonte*/
+    margin-bottom: 1rem; /*Coloca uma distande 1x o tamanho da fonte raiz para baixo do conteiner*/
 }
 
 .conteudosobre > h1{
-    text-align: center;
-    color: #006c84;
+    text-align: center; /*Alinha o texto no centro*/
+    color: #006c84; /*Cor da fonte*/
 }
 
 .conteudosobre > p{
-    margin: 20px;
-    padding: 10px;
+    margin: 20px; /*Margem geral em 20 pixels*/
+    padding: 10px; /*Espaçamento interno da div geral em 10 pixels*/
 }
 
 
 
 table{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /*Organização flexibilizada*/
+    justify-content: center; /*Conteudo centralizado na coluna*/
+    align-items: center; /*Alinha no centro em linha*/
 }
 .tabelahorarios{
-    padding: 10px;
+    padding: 10px; /*Espaçamento interno da div geral em 10 pixels*/
 }
 
 th, td{
-    border: 1px solid #000000;
-    padding: 5px;
-    text-align: left;
+    border: 1px solid #000000; /*Borda da tabela*/
+    padding: 5px; /*Espaçamento interno da div geral em 5 pixels*/
+    text-align: left; /*Alinhamento do texto a Esquerda*/
 }
 
 .titulo{
-    background-color: #000000;
-    color: azure;
+    background-color: #000000;/*Cor da célula*/
+    color: azure; /*Cor da fonte*/
 }
 
 
 .iconewpp{
-    width: 15px;
+    width: 15px; /*Largura do ícone*/
 }
 
 .contatomain{
-    display: grid;
-    grid-template-columns: 500px 1fr 500px;
-    grid-row: 1fr 1fr;
+    display: grid; /*Organização em grade*/
+    grid-template-columns: 500px 1fr 500px; /*Disposição das colunas*/
+    grid-row: 1fr 1fr; /*Espaçamento entre os conteudos*/
    
 
 }
 
 .contatoendereco{
-    width: 400px;
-    height: 500px;
-    grid-column-start: 1;
-    border: 2px solid #00000018;
-    padding: 20px;
-    border-radius: 50px;
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    width: 400px; /*Largura do conteudo em 400px*/
+    height: 500px; /*Altura do conteudo em 500 px*/
+    grid-column-start: 1; /*Inicia o conteudo na coluna 1*/
+    border: 2px solid #00000018; /*Configura a borda do conteiner*/
+    padding: 20px; /*Espaçamento interno da div geral em 20 pixels*/
+    border-radius: 50px; /*Angulação das pontas da borda*/
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);/*Cria uma sombra atras do conteiner na versão WebKit*/
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);/*Cria uma sombra atras do conteiner versão baseadas no motor Gecko*/
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75); /*Cria uma sombra atras do conteiner*/
 }
 .formcontato{
   
-    grid-column-start: 2;
-    width: 500px;
-    height: 500px;
-    border: 2px solid #00000018;
-    padding: 20px;
-    border-radius: 50px;
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    grid-column-start: 2; /*Inicia o conteudo na coluna 2*/
+    width: 500px; /*Largura do conteudo em 500px*/
+    height: 500px; /*Altura do conteudo em 500 px*/
+    border: 2px solid #00000018; /*Configura a borda do conteiner*/
+    padding: 20px; /*Espaçamento interno da div geral em 20 pixels*/
+    border-radius: 50px; /*Angulação das pontas da borda*/
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75); /*Cria uma sombra atras do conteiner na versão WebKit*/
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75); /*Cria uma sombra atras do conteiner versão baseadas no motor Gecko*/
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75); /*Cria uma sombra atras do conteiner*/
 }
 .contatocard{
-    grid-row-start: 2;
-    grid-column: 1/3;
-    text-align: center;
-    margin: 50px;
-    border: 2px solid #00000018;
-    padding: 20px;
-    border-radius: 50px;
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    grid-row-start: 2; /*Inicia o conteudo na Linha 2*/
+    grid-column: 1/3; /*Inicia o conteudo na coluna 1 e termina na coluna 3*/
+    text-align: center; /*Alinhamento do texto no Centro*/
+    margin: 50px; /*Margem geral da div de 50px*/
+    border: 2px solid #00000018; /*Configura a borda do conteiner*/
+    padding: 20px; /*Espaçamento interno da div geral em 20 pixels*/
+    border-radius: 50px; /*Angulação das pontas da borda*/
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75); /*Cria uma sombra atras do conteiner na versão WebKit*/
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75); /*Cria uma sombra atras do conteiner versão baseadas no motor Gecko*/
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75); /*Cria uma sombra atras do conteiner*/
 }
 h1{
-    color: #006c84;
+    color: #006c84; /*Cor da fonte*/
 }
 textarea{
-    border-radius: 25px;
+    border-radius: 25px; /*Angulação das pontas da borda*/
 }
 label{
-    width: 100px;
-    text-align: right;
-    padding-right: 5px;
+    width: 100px; /*Largura do conteudo em 100px*/
+    text-align: right; /*Alinhamento do texto a Direita*/
+    padding-right: 5px; /*Distanciamento do conteudo da div com a borda interna de 5 pixels*/
 }
 
 
 input{
-    margin-left: 10px;
+    margin-left: 10px; /*Margem a esquerda de 10px*/
 }
 .emailput{
-    margin-left: 21px;
+    margin-left: 21px; /*Margem a esquerda de 21px*/
 
 
 }
 .nomeput{
-    margin-left: 25.5px;
+    margin-left: 25.5px; /*Margem a esquerda de 25.5px*/
 
 }
 button{
-    margin-left: 100px;
-    width: 50px;
+    margin-left: 100px; /*Margem a esquerda de 100px*/
+    width: 50px;  /*Largura do conteudo em 50px*/
     
 }
 
 
 
 footer {
-    background: linear-gradient(135deg, #00bcd4, #006c84);
-    padding: 2rem;
-    color: white;
+    background: linear-gradient(135deg, #00bcd4, #006c84); /*Cor de fundo gradient: efeito de mudança de cor*/
+    padding: 2rem; /*Espaçamento interno da div geral em 2x o tamanho da fonte Raiz*/
+    color: white; /*Cor da fonte */
 }
 
 .footer-content {
-    text-align: center;
+    text-align: center; /*Alinhamento do texto no Centro*/
 }
 
 .contact-info h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /*Margem a baixo de 1x o tamanho da fonte Raiz*/
 }
 
 .final {
-    grid-column: 1 / 3;
-    text-align: center;
-    padding: 1rem;
-    background: #f0f8ff;
-    color: #006c84;
-    font-size: 0.9rem;
+    grid-column: 1 / 3; /*A div inicia na coluna 1 e termina na coluna 3*/
+    text-align: center; /*Alinhamento do texto no Centro*/
+    padding: 1rem; /*Espaçamento interno da div geral em 1x o tamanho da fonte Raiz*/
+    background: #f0f8ff; /*Cor de fundo*/
+    color: #006c84; /*Cor da fonte*/
+    font-size: 0.9rem; /*Tamanho da fonte em 0.9x o tamanho da fonte raiz*/
 }
 
 
 
 
-/*
-
-<div class="contatoendereco">
-    <h1>Localização</h1><br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30860.183064671946!2d-39.31463498916014!3d-14.795883499999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x739aba4c8c3f23f%3A0x24accc962fce455!2sClinica%20Amor%20Sa%C3%BAde%20-%20Conv%C3%AAnio%20Cart%C3%A3o%20de%20Todos!5e0!3m2!1spt-BR!2sbr!4v1737513372644!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-<div>
-         
-        </div>
-        </div>
-
-
-*/
