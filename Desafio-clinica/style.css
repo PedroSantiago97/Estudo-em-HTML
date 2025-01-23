@@ -149,18 +149,19 @@ table {
 }
 
 .textomovendo {
-    font-size: 1.1rem;
-    white-space: nowrap;
-    animation: moveText 20s linear infinite;
+    font-size: 1.1rem; /*Muda o tamanho da fonte desse conteiner em 1,1x o tamanho da fonte raiz*/
+    white-space: nowrap; /*Impede do texto quebrar múltiplas linhas*/
+    animation: moveText 20s linear infinite; /*Define o comportamento da animação*/
+    /*animation: nomeDaAnimação tempoDaAnimação funçãoDeTempo comportamentoAposOTempo*/
 }
 
 
-@keyframes moveText {
+@keyframes moveText { /*Define a animação que foi criada acima moveText */
     from {
-        transform: translateX(100%);
+        transform: translateX(100%); /*Começa na direita (Fim) do container*/
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(-80%); /**/
     }
 }
 
